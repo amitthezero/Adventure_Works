@@ -75,7 +75,7 @@ The dashboard is designed to deliver **actionable insights** across:
 ---
 
 ## DAX Measures Used
-```DAX
+DAX
 Total Revenue = SUM(Sales[Sales Amount])
 
 Total Profit = SUM(Sales[Profit])
@@ -90,7 +90,7 @@ DIVIDE([Total Revenue], DISTINCTCOUNT(Customer[Customer ID]))
 Top Customer Rank = 
 RANKX(ALL(Customer), [Total Revenue], , DESC)
 
-## Data Model
+### Data Model
 -Fact Table: Sales
 -Dimension Tables:
 -Customer
